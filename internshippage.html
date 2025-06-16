@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internships</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .logo img {
+            width: 100px;
+            height: auto;
+        }
+        .main {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 900px;
+            justify-content: center;
+        }
+        .box {
+            background: white;
+            border: 1px solid #ddd;
+            box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px, rgba(14, 30, 37, 0.32) 0px 2px 16px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centers everything */
+            text-align: center; /* Ensures text stays centered */
+            padding: 15px;
+
+        }
+        .box:hover {
+            transform: scale(1.05);
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 12px;
+        }
+        h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Keep them in a column */
+            align-items: start; /* Align items at the same start position */
+            gap: 5px; /* Space between list items */
+        }
+
+        li::before {
+            content: "• ";
+            color: black;
+            font-weight: bold;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #8a2be2;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #38025f;
+        }
+        @media (max-width: 600px) {
+            .main {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <img src="voc-logo.png" alt="Vault Of Codes">
+    </div>
+    <h1>Internships</h1>
+    <div class="main">
+    <div class="box">
+        <h2>Web Development Internship Program</h2>
+        <ul>
+            <li>Duration: 1 month/2 months</li>
+            <li>Location: Virtual</li>
+            <li>Stipend: -</li>
+            <li>Start date: 05/11/2023</li>
+        </ul>
+        <button>View Details</button>
+    </div>
+    <div class="box">
+        <h2>App Development Internship Program</h2>
+        <ul>
+            <li>Duration: 1 month/2 months</li>
+            <li>Location: Virtual</li>
+            <li>Stipend: -</li>
+            <li>Start date: 05/11/2023</li>
+        </ul>
+        <button>View Details</button>
+    </div>
+    <div class="box">
+        <h2>Python Programming Internship Program</h2>
+        <ul>
+            <li>Duration: 1 month/2 months</li>
+            <li>Location: Virtual</li>
+            <li>Stipend: -</li>
+            <li>Start date: 05/11/2023</li>
+        </ul>
+        <button>View Details</button>
+    </div>
+    <div class="box">
+        <h2>Java Programming Internship Program</h2>
+        <ul>
+            <li>Duration: 1 month/2 months</li>
+            <li>Location: Virtual</li>
+            <li>Stipend: -</li>
+            <li>Start date: 05/11/2023</li>
+        </ul>
+        <button>View Details</button>
+    </div>
+</div>
+</body>
+</html>
